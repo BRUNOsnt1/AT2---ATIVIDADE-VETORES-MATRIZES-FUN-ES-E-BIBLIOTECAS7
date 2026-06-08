@@ -1,0 +1,28 @@
+programa
+{
+	funcao inicio()
+	{
+		real temperaturas
+		inteiro c, d
+
+		para(c = 0; c < 3; c++)
+		{
+			para(d = 0; d < 4; d++)
+			{
+				escreva("Digite a temperatura da cidade ", c + 1, " no dia ", d + 1, ": ")
+				leia(temperaturas[c][d])
+			}
+		}
+
+		escreva("\nTemperaturas registradas:\n")
+		para(c = 0; c < 3; c++)
+		{
+			escreva("Cidade ", c + 1, ": ")
+			para(d = 0; d < 4; d++)
+			{
+				escreva(temperaturas[c][d], " | ")
+			}
+			escreva("\n")
+		}
+	}
+}
