@@ -1,0 +1,20 @@
+programa
+{
+	inclua biblioteca Matematica --> mat
+	
+	funcao inicio()
+	{
+		real numero, arredondado, raiz, quadrado
+
+		escreva("Digite un número real: ")
+		leia(numero)
+
+		arredondado = mat.arredondar(numero, 0)
+		raiz = mat.raiz(numero, 2.0)
+		quadrado = mat.potencia(numero, 2.0)
+
+		escreva("\nValor arredondado: ", arredondado)
+		escreva("\nRaiz quadrada: ", raiz)
+		escreva("\nElevado ao quadrado: ", quadrado, "\n")
+	}
+}
