@@ -1,0 +1,24 @@
+programa
+{
+	funcao real calcularMedia(real n1, real n2)
+	{
+		real resultado
+		resultado = (n1 + n2) / 2
+		retorne resultado
+	}
+
+	funcao inicio()
+	{
+		real nota1, nota2, mediaFinal
+
+		escreva("Digite a primeira nota: ")
+		leia(nota1)
+
+		escreva("Digite a segunda nota: ")
+		leia(nota2)
+
+		mediaFinal = calcularMedia(nota1, nota2)
+
+		escreva("\nA média calculada é: ", mediaFinal, "\n")
+	}
+}
